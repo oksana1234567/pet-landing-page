@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+   </head>
+<body>
+
+<header>
+<div class="container">
+<nav class="navigation">
+    <ul class="nav-flex">
+        <li class="logo">layout</li>
+        <li>
+            <ul class="navigation-group">
+            <li class="navigation-group-element">html</li>
+            <li class="navigation-group-element">css</li>
+            <li class="navigation-group-element">javascript</li>
+            </ul>
+        </li>
+        <li><button type="button" class="navigation-button" >enter</button></li>
+    </ul>
+</nav>
+</div>
+</header>
+
+<main>
+<!-- Герой -->
+<div class="container">
+<div class="hero-carousel">
+
+    <ul class="gallery">
+    </ul>
+
+<a class="carousel-button-previous" onclick="changeSlides(-1)">❮</a>
+<a class="carousel-button-next" onclick="changeSlides(1)">❯</a>
+
+<div class="dots" >
+    <div class="dot" onclick="activeSlide(1)"><img src="./png/changeSlide.png" alt="кнопка перелистывания изображений"> </div>
+    <div class="dot" onclick="activeSlide(2)"><img src="./png/changeSlide.png" alt="кнопка перелистывания изображений"> </div>
+    <div class="dot" onclick="activeSlide(3)"><img src="./png/changeSlide.png" alt="кнопка перелистывания изображений"> </div>
+    <div class="dot" onclick="activeSlide(4)"><img src="./png/changeSlide.png" alt="кнопка перелистывания изображений"> </div>
+    <div class="dot" onclick="activeSlide(5)"><img src="./png/changeSlide.png" alt="кнопка перелистывания изображений"> </div>
+</div>
+<section class="hero-caption">
+    <h1 class="caption-title">Monetize <br> your skills now!</h1>
+    <a class="caption-button" href="#registration">Go!</a>
+</section>
+</div>
+</div>
+
+<!-- О себе секция -->
+<div class="container">
+<section class="about-you-section">
+<section class="about-you-section-article">
+    <h2 class="article-title">Something about you</h2>
+    <p class="article">
+        In this section, you can specify any information about yourself, insert your photos, your interests and skills. It is
+        also desirable to use tag canvas.</p>
+        <p class="article">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+        omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+        porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+        tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+    </p>
+</section>  
+
+<section class="about-you-section-picture">
+    <p class="photo-descr">Your photo</p>
+    <img src="./png/aboutMePicture.png" alt="">
+</section>
+
+</section>
+</div>
+
+<!-- Секция регистрации -->
+<div class="container">
+<section class="registration-section" id="registration">
+<div class="background-img">
+    
+        <form class="form">
+        <div class="form-registration-container">
+        <h3 class="registration-title">Register</h3>
+        
+        <label for="email"></label>
+        <input class="form-element" type="text" placeholder="Email" name="email" required>
+
+        <label for="psw"></label>
+        <input class="form-element" type="password" placeholder="Password" name="psw" required>
+
+        <label for="country"></label>
+        <select class="form-element" name="country"   required>
+        <option selected disabled hidden>Country</option>
+        <option value="country1">Country 1</option>
+        <option value="country2">Country 2</option>
+        <option value="country3">Country 3</option>
+        <option value="country4">Country 4</option>
+        <option value="country5">Country 5</option>
+        </select>
+        
+</div>
+<button type="submit" class="register-button">Login</button>
+</form>
+</div>
+</section>
+</div>
+</main>
+    
+<footer class="footer">
+    <div class="container footer-item"><p>© 2015 layout</p></div>
+</footer>
+
+<script src="./js/main.js" ></script>
+
+</body>
+</html>
