@@ -195,13 +195,13 @@ button.navigation-button {
 
 .about-you-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
 .about-you-section-article {
   width: 459px;
-  margin-left: 50px;
+  margin-right: 100px;
 }
 
 .article-title {
